@@ -5,22 +5,86 @@
   max-width: 1600px;
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
+ 
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  
 }
-
+p, h1, img {
+  margin: 0;
+  
+}
 .header {
+  
+  position: relative;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color:  #f2f2f2;
   /* выше установили ограничения для секции */
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  }
+  
+  .header__title {
+    line-height: 96px;
+    font-size: 102px;
+    font-weight: 600;
+    width: 730px;
+    margin-left: 64px;
+    z-index: 3;
+  }
+  
+  .header__subtitle {
+    position: absolute;
+    bottom: 30px;
+    left: 64px;
+    width: 388px;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: normal;
+    z-index: 3;
+  }
+  
+
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background-color:  #2f80ed ;
+  z-index: 1;
+  position: absolute;
+  top: 64px;
+  right: 0px;
 }
+
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+
+}
+
+.description__two-columns {
+  display: flex;
+
+}
+
+/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+
+
+
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
