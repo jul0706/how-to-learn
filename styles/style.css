@@ -58,6 +58,10 @@ p, h1, h2, h3, img {
     font-weight: normal;
     z-index: 3;
   }
+
+  .header__link {
+    color: #2f80ed;
+  }
   
 
 .header__square-pic {
@@ -79,6 +83,8 @@ p, h1, h2, h3, img {
   margin: 0;
   padding: 0;
   z-index: 2;
+  object-fit: cover;
+  object-position: right bottom;
 
 }
 
@@ -88,7 +94,7 @@ p, h1, h2, h3, img {
   margin-top: 100px;
 }
 
-.description__two-columns {
+.two-columns {
   display: flex;
   width: 80%;
   justify-content: space-between;
