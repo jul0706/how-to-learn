@@ -173,7 +173,7 @@ margin-top: 60px;
 }
 
 .table__heading {
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
@@ -183,14 +183,16 @@ margin-top: 60px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-}
-
-.table__text:nth-child(2n) {
   margin-bottom: 20px;
 }
+
+.table__text:last-child {
+  margin-bottom: 0;
+}
 .feynman {
+  box-sizing:border-box;
   padding-top: 100px;
-  height: 890px;
+  min-height: 890px;
   position: relative;
   margin: auto;
  
@@ -228,28 +230,21 @@ margin-top: 60px;
 }
 
 .kaufman {
-  background-color: black;
+  background-color: #1f1f1f;
   position: relative;
   overflow: hidden;
   z-index: 0;
 }
 
 .section-title_theme_dark {
-  width: 60%;
+  
   color: white;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: 600;
   margin: 90px auto 20px auto;
 }
 
 .section-subtitle_theme_dark {
-  width: 60%;
   color: white;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-}
+  }
 
 .table_theme_dark {
 margin: 0 auto 90px auto;
@@ -277,7 +272,7 @@ margin: 0 auto 90px auto;
 }
 
 .kaufman__triangle {
-  
+  background-size: cover; 
 position: absolute;
 width: 877px;
 height: 877px;
@@ -289,8 +284,11 @@ background-image: url(../images/kaufman-triangle.svg);
 }
 
 .footer {
-  background-color: black;
+  background-color: #1f1f1f;
   color: white;
+  min-height: 350px;
+  display: flex;
+  align-items: stretch;
  }
 
 .logo_place_footer {
@@ -300,25 +298,22 @@ background-image: url(../images/kaufman-triangle.svg);
 .footer__columns {
   padding-top: 60px;
   padding-bottom: 40px;
-  margin: auto;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   width: 90%;
-  min-height: 350px;
+  
 }
 
 .footer__column_content_copyright {
   display: flex;
+  flex-direction: column;
   flex-basis: 711px;
-  justify-content: flex-start;
-  position: relative;
-  
+  justify-content: space-between;
+    
 }
 
 .footer__author {
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
   margin: 18px 0;
   line-height: 25px;
   font-size: 18px;
@@ -332,12 +327,13 @@ background-image: url(../images/kaufman-triangle.svg);
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
-  
+  list-style-type: none;
 }
 
 .footer__column-link {
   text-decoration: none;
   color: white;
+ 
 }
 
 .footer__social-icon {
@@ -346,11 +342,10 @@ background-image: url(../images/kaufman-triangle.svg);
   margin-right: 10px;
 }
 
-.footer__column-link-li {
-  list-style-type: none;
-}
+
 
 .footer__column-heading {
+  margin-top: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
