@@ -9,11 +9,9 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
   
+  padding: 0;
 }
-p, h1, h2, h3, img {
-  margin: 0;
-  
-}
+
 .header {
   
   position: relative;
@@ -43,7 +41,7 @@ p, h1, h2, h3, img {
     line-height: 96px;
     font-size: 102px;
     font-weight: 600;
-    width: 730px;
+    max-width: 730px;
     margin-left: 64px;
     z-index: 3;
   }
@@ -52,7 +50,7 @@ p, h1, h2, h3, img {
     position: absolute;
     bottom: 30px;
     left: 64px;
-    width: 388px;
+    max-width: 388px;
     line-height: 25px;
     font-size: 18px;
     font-weight: normal;
@@ -61,6 +59,7 @@ p, h1, h2, h3, img {
 
   .header__link {
     color: #2f80ed;
+    text-decoration: none;
   }
   
 
@@ -107,7 +106,7 @@ p, h1, h2, h3, img {
   font-size: 18px;
   font-weight: normal;
   color: #2f80ed;
-  
+  margin: 0;
 }
 
 .two-columns__main-text{
@@ -119,7 +118,11 @@ p, h1, h2, h3, img {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.two-columns__paragraph:first-child {
+  margin-top: 0;
 }
 
 .two-columns__paragraph:last-child {
@@ -196,7 +199,7 @@ margin-top: 60px;
 
 
 .feynman__title {
-  width: 648px;
+  max-width: 648px;
   text-align: center;
   line-height: 1.15;
   font-size: 120px;
@@ -221,13 +224,14 @@ margin-top: 60px;
   font-size: 36px;
   font-weight: normal;
   color: #2f80ed;
+  text-decoration: none;
 }
 
 .kaufman {
   background-color: black;
   position: relative;
   overflow: hidden;
-  z-index: 1;
+  z-index: 0;
 }
 
 .section-title_theme_dark {
@@ -273,25 +277,25 @@ margin: 0 auto 90px auto;
 }
 
 .kaufman__triangle {
+  
 position: absolute;
+width: 877px;
+height: 877px;
 top: 0px;
 right: -210px;
 z-index: -1;
+background-image: url(../images/kaufman-triangle.svg);
+
 }
 
 .footer {
   background-color: black;
   color: white;
-  
-  
-  
-}
+ }
 
 .logo_place_footer {
-  
   background-image: url('../images/logo_place_footer.svg');
-  
-}
+  }
 
 .footer__columns {
   padding-top: 60px;
@@ -315,16 +319,16 @@ z-index: -1;
   position: absolute;
   left: 0px;
   bottom: 0px;
-  margin: 18px 0px;
+  margin: 18px 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
 }
 
 .footer__column-links {
-  margin: 20px 0px 16px 0px;
+  margin: 20px 0 16px 0;
   text-align: left;
-  padding: 0px;
+  padding: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
