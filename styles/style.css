@@ -67,7 +67,7 @@ p, h1, h2, h3, img {
 .header__square-pic {
   height: 568px;
   width: 568px;
-  background-color:  #2f80ed ;
+  background-color:  #2f80ed;
   z-index: 1;
   position: absolute;
   top: 64px;
@@ -112,7 +112,7 @@ p, h1, h2, h3, img {
 
 .two-columns__main-text{
   width: 80%;
-  min-width: 784px
+  min-width: 784px;
 }
 
 .two-columns__paragraph {
