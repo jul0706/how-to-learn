@@ -4,5 +4,6 @@
     font-weight: normal;
     color: #2f80ed;
     text-decoration: none;
+    -ms-flex-item-align: start;
     align-self: flex-start;
 }
