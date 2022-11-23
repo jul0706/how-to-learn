@@ -1,0 +1,17 @@
+.form__item_el_params {
+    position: absolute;
+    width: 1px; 
+    height: 1px;
+    overflow: hidden; 
+    clip: rect(0 0 0 0);
+}
+
+.form__item_el_params:checked + .form__pseudo-item {
+    background-image: url(../../../../../images/radio-icon.svg);
+   background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.form__item_el_params:disabled + .form__pseudo-item {
+    border: 1px solid blue;
+}

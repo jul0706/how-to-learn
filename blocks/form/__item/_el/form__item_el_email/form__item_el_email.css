@@ -1,0 +1,20 @@
+.form__item_el_email::placeholder {
+font-family: 'Helvetica Neue', Arial, sans-serif;
+color: #1f1f1f;
+}
+.form__item_el_email::-webkit-input-placeholder {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #1f1f1f;
+    }
+    .form__item_el_email::-moz-placeholder {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #1f1f1f;
+    }
+    .form__item_el_email:-ms-input-placeholder {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #1f1f1f;
+    }
+    .form__item_el_email::-ms-input-placeholder {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #1f1f1f;
+    }
