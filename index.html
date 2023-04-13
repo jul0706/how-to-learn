@@ -20,7 +20,7 @@
         <p class="header__subtitle text-block">
           Какие современные и эффективные подходы к обучению вы можете
           использовать в своей жизни?
-          <a class="header__link animation-link" href="#">Узнать &rarr;</a>
+          <a class="header__link animation-link" href="#techniques">Узнать &rarr;</a>
         </p>
 
         <div class="header__square-pic rotation"></div>
@@ -69,7 +69,7 @@
         <!--Блок техники обучения-->
 
         <section class="techniques">
-          <h2 class="section-title text-block">Техники обучения</h2>
+          <h2 class="section-title text-block" id="techniques">Техники обучения</h2>
 
           <p class="section-subtitle text-block">
             Пять практик от Барабары Оакли
@@ -213,7 +213,9 @@
         >
           <h2 class="feynman__title text-block">Метод Фейнмана</h2>
           <p class="feynman__subtitle text-block">Выучить и не забыть</p>
-          <a class="feynman__link animation-link" href="#">Подробнее &rarr; </a>
+          <a class="feynman__link animation-link" href="https://habr.com/ru/companies/getmeit/articles/646085/" target="_blank">
+            Подробнее &rarr; 
+          </a>
         </section>
 
         <!--Блок цифры и факты-->
@@ -306,7 +308,7 @@
                 src="./images/khan-book.jpg"
                 alt="книга Салмана Хана Весь мир-школа"
               />
-              <a class="khan__buy-link animation-link" href="#"
+              <a class="khan__buy-link animation-link" href="https://www.labirint.ru/books/483575/" target="_blank"
                 >Купить книгу &rarr;</a
               >
             </div>
@@ -434,130 +436,31 @@
           </p>
 
           <div class="resources__logo-zone">
-            <a class="resources__link animation-link" href="#"
+            <a class="resources__link animation-link" href="https://arzamas.academy/" target="_blank" 
               ><img
                 class="resources__logo"
                 src="./images/logo/resources-arzamas.svg"
                 alt="ссылка арзамас"
             /></a>
-            <a class="resources__link animation-link" href="#"
+            <a class="resources__link animation-link" href="https://nplus1.ru/" target="_blank"
               ><img
                 class="resources__logo"
                 src="./images/logo/resources-n1.svg"
                 alt="ссылка Н+1"
             /></a>
-            <a class="resources__link animation-link" href="#"
+            <a class="resources__link animation-link" href="https://strelka.com/ru" target="_blank"
               ><img
                 class="resources__logo"
                 src="./images/logo/resources-strelka.svg"
                 alt="ссылка стрелка"
             /></a>
-            <a class="resources__link animation-link" href="#"
+            <a class="resources__link animation-link" href="https://polka.academy/" target="_blank"
               ><img
                 class="resources__logo"
                 src="./images/logo/resources-polka.svg"
                 alt="ссылка полка"
             /></a>
           </div>
-        </section>
-
-        <!--Форма обратной связи-->
-
-        <section class="form">
-          <h2 class="section-title text-block">Обратная связь</h2>
-          <p class="section-subtitle text-block">
-            Насколько Вам полезен наш сайт?
-          </p>
-
-          <!--Контейнер для формы-->
-          <div class="form__container">
-            <!--Фон для формы-->
-            <div class="form__backgroud"></div>
-
-            <!--Непосредственно форма-->
-            <form class="form__admin">
-              <div class="form__main-container">
-                <h2 class="form__heading text-block">Введите данные</h2>
-                <fieldset class="form__input-container">
-                  <!--Поле ввода Имя-->
-                  <label for="first-name" class="form__label">Имя</label
-                  ><input
-                    type="text"
-                    class="form__item form__item_el_first-name"
-                    id="first-name"
-                    name="first-name"
-                    required
-                  />
-
-                  <!--Поле ввода Фамилия-->
-                  <label for="last-name" class="form__label">Фамилия</label
-                  ><input
-                    type="text"
-                    class="form__item form__item_el_last-name"
-                    id="last-name"
-                    name="last-name"
-                    required
-                  />
-
-                  <!--Поле ввода Почта-->
-                  <label for="email" class="form__label"
-                    >Электронная почта</label
-                  ><input
-                    type="email"
-                    class="form__item form__item_el_email"
-                    id="email"
-                    name="email"
-                    placeholder="hello@example.com"
-                    required
-                  />
-
-                  <!--Поле выбора "полезно-неполезно"-->
-                  <h3 class="form__heading form__heading_type_ctrl-el-heading">
-                    Полезен ли наш сайт?
-                  </h3>
-
-                  <!--Полезен-->
-                  <label
-                    for="use"
-                    class="form__label form__label_direction_right"
-                  >
-                    <input
-                      type="radio"
-                      class="form__item form__item_el_params"
-                      id="use"
-                      value="use"
-                      name="params"
-                      required
-                      checked
-                    />
-                    <span class="form__pseudo-item form__pseudo-item"></span>
-                    <span class="form__label-text">Да, полезен</span>
-                  </label>
-
-                  <!--Бесполезен-->
-                  <label
-                    for="unuse"
-                    class="form__label form__label_direction_right"
-                  >
-                    <input
-                      type="radio"
-                      class="form__item form__item_el_params"
-                      id="unuse"
-                      value="unuse"
-                      name="params"
-                      required
-                    />
-                    <span class="form__pseudo-item"></span>
-                    <span class="form__label-text">Нет, сайт бесполезен</span>
-                  </label>
-                </fieldset>
-              </div>
-            </form>
-          </div>
-          <div
-            class="form__image"
-            aria-label="фон раздела обратная связь - постер из фильма обратная связь"
-          ></div>
         </section>
       </main>
 
@@ -582,19 +485,19 @@
             <nav class="footer__column-links">
               <ul class="footer__list">
                 <li>
-                  <a class="footer__column-link animation-link" href="#"
-                    >Главная</a
-                  >
+                  <a class="footer__column-link animation-link" href="https://practicum.yandex.ru/" target="_blank">
+                    Главная
+                  </a>
                 </li>
                 <li>
-                  <a class="footer__column-link animation-link" href="#"
-                    >Концепция</a
-                  >
+                  <a class="footer__column-link animation-link" href="https://practicum.yandex.ru/how-we-learn/" target="_blank">
+                    Концепция
+                  </a>
                 </li>
                 <li>
-                  <a class="footer__column-link animation-link" href="#"
-                    >Наставники</a
-                  >
+                  <a class="footer__column-link animation-link" href="https://practicum.yandex.ru/career-center/stories/" target="_blank">
+                    Истории выпускников
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -608,8 +511,8 @@
             <nav class="footer__column-links">
               <ul class="footer__list">
                 <li>
-                  <a class="footer__column-link animation-link" href="#"
-                    ><img
+                  <a class="footer__column-link animation-link" href="https://www.youtube.com/@YandexPracticum" target="_blank">
+                    <img
                       class="footer__social-icon"
                       src="./images/youtube-icon.svg"
                       alt="иконка ютьюб"
@@ -618,8 +521,8 @@
                 </li>
 
                 <li>
-                  <a class="footer__column-link animation-link" href="#"
-                    ><img
+                  <a class="footer__column-link animation-link" href="https://vk.com/yandex.practicum" target="_blank">
+                    <img
                       class="footer__social-icon"
                       src="./images/vk_color_white.svg"
                       alt="иконка ВКонтакте"
