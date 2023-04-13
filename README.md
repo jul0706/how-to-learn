@@ -9,4 +9,4 @@
 - iframe
 - работа с изображениями и шрифтами
 
-Ссылка на сайт: https://jul0706.github.io/how-to-learn/
+Ссылка на сайт: https://jul0706.github.io/how-to-learn/index.html
